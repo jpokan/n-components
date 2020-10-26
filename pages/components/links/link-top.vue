@@ -1,8 +1,8 @@
 <template>
   <div class="flex items-center justify-center gap-3">
-    <MagnetButton2 />
-    <MagnetButton2 />
-    <MagnetButton2 />
+    <LinkTop />
+    <LinkTop />
+    <LinkTop />
   </div>
 </template>
 

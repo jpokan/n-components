@@ -10,18 +10,16 @@
     <div
       class="m-4 py-4 px-4 flex justify-center gap-4 bg-gray-200 rounded flex-wrap"
     >
-      <nuxt-link
-        class="hover:text-teal-500 hover:underline text-sm text-gray-600"
-        to="/about"
-      >
+      <nuxt-link class="hover:text-teal-500 text-sm text-gray-600" to="/about">
         About
       </nuxt-link>
-      <nuxt-link
-        class="hover:text-teal-500 hover:underline text-sm text-gray-600"
-        to="/"
+      <a
+        target="_blank"
+        class="hover:text-teal-500 text-sm text-gray-600"
+        href="https://github.com/Topomon/n-components"
+        >Github</a
       >
-        Github
-      </nuxt-link>
+
       <nuxt-link
         class="text-sm hover:text-teal-500 font-semibold text-gray-800"
         to="/"
@@ -33,10 +31,11 @@
       <details
         v-for="(type, index) in components"
         :key="index"
+        open
         class="mx-4 my-1"
       >
         <summary
-          class="px-4 py-2 text-sm font-semibold uppercase text-gray-500 hover:text-teal-500 cursor-pointer transition-colors duration-150 rounded"
+          class="px-4 py-2 text-sm font-semibold uppercase text-gray-500 hover:text-gray-800 cursor-pointer transition-colors duration-150 rounded"
         >
           {{ index }}
         </summary>
@@ -81,7 +80,7 @@ export default {
     const components = this.$router.options.routes.filter((element) => {
       return element.path.includes('/components/')
     })
-
+    console.log(components)
     // Get list of pages inside components directory
     const paths = components.map((x) => x.path)
 

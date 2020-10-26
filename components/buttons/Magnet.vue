@@ -11,7 +11,12 @@
 
 <script>
 export default {
-  props: ['text'],
+  props: {
+    text: {
+      type: String,
+      default: 'Button',
+    },
+  },
   data() {
     return {
       mouseStart: 'null',
