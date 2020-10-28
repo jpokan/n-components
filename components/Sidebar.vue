@@ -80,10 +80,10 @@ export default {
     const components = this.$router.options.routes.filter((element) => {
       return element.path.includes('/components/')
     })
-    console.log(components)
+    // console.log(components)
     // Get list of pages inside components directory
     const paths = components.map((x) => x.path)
-
+    // console.log(paths)
     function mutateData(paths) {
       const componentsArray = []
 

@@ -1,8 +1,6 @@
 <template>
   <div class="flex items-center justify-center gap-3">
-    <LinkTop />
-    <LinkTop />
-    <LinkTop />
+    <slot></slot>
   </div>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
-  <div class="flex items-center justify-center gap-3">
+  <ComponentBox>
     <Magnet2 />
     <Magnet2 />
     <Magnet2 />
-  </div>
+  </ComponentBox>
 </template>
 
 <script>
