@@ -1,7 +1,7 @@
 <template>
   <div class="flex text-gray-700">
     <div class="w-0 lg:w-1/5 xl:w-1/4"></div>
-    <div class="w-full lg:w-3/5 xl:w-2/4 m-10 xl:mx-0 mt-32 mb-32">
+    <div class="w-full lg:w-3/5 xl:w-2/4 m-10 xl:mx-0 mt-32 mb-48">
       <h1 class="mb-16 text-right">October of 2020</h1>
       <p class="">
         As I learn more about front end web development, I decided to make this
@@ -13,7 +13,10 @@
         It is also my way of sharing what I have learnt and hopefully be useful
         to someone else. If you consider this to be the case, please support me
         by
-        <a class="hover:text-teal-500 text-gray-800 font-semibold" href="#"
+        <a
+          class="hover:text-teal-500 text-gray-800 font-semibold"
+          href="https://ko-fi.com/topousuario"
+          target="_blank"
           >donating</a
         >
         or sharing this content :)<br />

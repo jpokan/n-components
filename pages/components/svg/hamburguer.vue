@@ -1,8 +1,6 @@
 <template>
   <ComponentBox>
-    <LinkAppear text="Mockupcities" />
-    <LinkAppear text="Twitter" />
-    <LinkAppear text="Instagram" />
+    <Hamburger />
   </ComponentBox>
 </template>
 

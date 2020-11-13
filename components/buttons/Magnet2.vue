@@ -19,14 +19,23 @@ export default {
       type: String,
       default: 'Button',
     },
+    amount: {
+      type: Number,
+      default: 0.18,
+    },
+    startSpeed: {
+      type: Number,
+      default: 150,
+    },
+    endSpeed: {
+      type: Number,
+      default: 600,
+    },
   },
   data() {
     return {
-      mouseStart: 'null',
       mouse: 'null',
       center: 'null',
-      startSpeed: 150,
-      endSpeed: 600,
     }
   },
   methods: {
@@ -42,7 +51,7 @@ export default {
       event.target.style.transform = event.target.childNodes[0].style.transform = `translate(0px, 0px)`
     },
     magnet(event) {
-      const amount = 0.18
+      const amount = this.amount
 
       // Lerp
       function lerp(start, end, amount) {

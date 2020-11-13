@@ -1,9 +1,11 @@
 <template>
   <a
-    class="text-gray-600 font-semibold hover:text-teal-500 overflow-hidden relative"
+    class="text-gray-600 font-semibold hover:text-teal-500 focus:text-teal-500 transition-colors duration-500 overflow-hidden relative px-2"
     href="#"
     @mouseenter="enter($event)"
     @mouseleave="leave($event)"
+    @focus="enter($event)"
+    @blur="leave($event)"
   >
     <span :data-text="text" class="flex link-top">
       {{ text }}
@@ -18,24 +20,23 @@ export default {
       type: String,
       default: 'Link',
     },
-  },
-  data() {
-    return {
-      direction: 'top',
-    }
+    easing: {
+      type: String,
+      default: 'cubic-bezier(0.42, 0, 0.58, 1)',
+    },
   },
   methods: {
     enter(event) {
       const span = event.target.children[0]
       span.animate(
         [
-          { transform: 'translateY(0px)', opacity: 1 },
-          { transform: 'translateY(-25px)', opacity: 0 },
-          { transform: 'translateY(-50px)', opacity: 1 },
+          { transform: `translateY(0px)`, opacity: 1 },
+          { transform: `translateY(-25px)`, opacity: 0 },
+          { transform: `translateY(-50px)`, opacity: 1 },
         ],
         {
           // timing options
-          easing: 'cubic-bezier(0.42, 0, 0.58, 1)',
+          easing: this.easing,
           duration: 300,
         }
       )
@@ -44,13 +45,13 @@ export default {
       const span = event.target.children[0]
       span.animate(
         [
-          { transform: 'translateY(0px)', opacity: 1 },
-          { transform: 'translateY(25px)', opacity: 0 },
-          { transform: 'translateY(50px)', opacity: 1 },
+          { transform: `translateY(0px)`, opacity: 1 },
+          { transform: `translateY(25px)`, opacity: 0 },
+          { transform: `translateY(50px)`, opacity: 1 },
         ],
         {
           // timing options
-          easing: 'cubic-bezier(0.42, 0, 0.58, 1)',
+          easing: this.easing,
           duration: 300,
         }
       )
@@ -61,13 +62,13 @@ export default {
 
 <style>
 .link-top:before {
-  /* pointer-events: none; */
+  pointer-events: none;
   content: attr(data-text);
   position: absolute;
   transform: translateY(50px);
 }
 .link-top:after {
-  /* pointer-events: none; */
+  pointer-events: none;
   content: attr(data-text);
   position: absolute;
   transform: translateY(-50px);

@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <nuxt-link to="/">
       <h2
-        class="text-gray-600 font-bold m-4 px-2 text-2xl hover:text-teal-500 transition-colors duration-150"
+        class="text-gray-600 font-bold m-4 px-2 text-2xl hover:text-gray-800 transition-colors duration-150"
       >
         Vue/Nuxt UI Components Library
       </h2>
@@ -10,22 +10,25 @@
     <div
       class="m-4 py-4 px-4 flex justify-center gap-4 bg-gray-200 rounded flex-wrap"
     >
-      <nuxt-link class="hover:text-teal-500 text-sm text-gray-600" to="/about">
+      <nuxt-link
+        class="hover:text-teal-500 text-sm text-gray-600 px-1"
+        to="/about"
+      >
         About
       </nuxt-link>
       <a
         target="_blank"
-        class="hover:text-teal-500 text-sm text-gray-600"
+        class="hover:text-teal-500 text-sm text-gray-600 px-1"
         href="https://github.com/Topomon/n-components"
         >Github</a
       >
-
-      <nuxt-link
-        class="text-sm hover:text-teal-500 font-semibold text-gray-800"
-        to="/"
+      <a
+        target="_blank"
+        class="text-sm hover:text-teal-500 font-semibold text-gray-800 px-1"
+        href="https://ko-fi.com/topousuario"
       >
         Donate
-      </nuxt-link>
+      </a>
     </div>
     <div class="overflow-y-scroll scrolling-bar">
       <details
