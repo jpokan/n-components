@@ -1,5 +1,5 @@
 <template>
-  <div class="flex text-gray-700">
+  <div class="flex text-gray-700 items-center min-h-screen">
     <div class="w-0 lg:w-1/5 xl:w-1/4"></div>
     <div class="w-full lg:w-3/5 xl:w-2/4 m-10 xl:mx-0 mt-32 mb-48">
       <h1 class="mb-16 text-right">October of 2020</h1>
