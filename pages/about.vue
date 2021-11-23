@@ -5,7 +5,7 @@
       <h1 class="mb-16 text-right">October of 2020</h1>
       <p class="">
         As I learn more about front end web development, I decided to make this
-        collection of vue/nuxt components.<br />
+        collection of vue components.<br />
         <br />
         I wanted to document my own components so that I can go back and look up
         how these work and how to use or modify them in the future.<br />

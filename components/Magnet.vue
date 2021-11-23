@@ -64,9 +64,13 @@ export default {
       this.mouse = { x: mouseX, y: mouseY }
       // console.log('Mouse: ' + mouseX, mouseY)
 
+      // OffsetLeft & OffsetTop must be related from the window
+      const viewportOffset = event.target.getBoundingClientRect()
+      const offsetLeft = viewportOffset.left
+      const offsetTop = viewportOffset.top
       // Get center position (cx, cy) of item
-      const centerX = event.target.offsetLeft + event.target.offsetWidth / 2
-      const centerY = event.target.offsetTop + event.target.offsetHeight / 2
+      const centerX = offsetLeft + event.target.offsetWidth / 2
+      const centerY = offsetTop + event.target.offsetHeight / 2
       this.center = { x: centerX, y: centerY }
       // console.log('Center: ' + centerX, centerY)
 

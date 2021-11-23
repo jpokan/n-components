@@ -1,8 +1,8 @@
 <template>
   <ComponentBox>
-    <Magnet2 />
-    <Magnet2 />
-    <Magnet2 />
+    <Magnet />
+    <Magnet />
+    <Magnet />
   </ComponentBox>
 </template>
 

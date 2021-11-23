@@ -9,10 +9,6 @@
       <nuxt-link class="text-gray-600 hover:text-gray-800" to="/"
         >Home</nuxt-link
       >
-      <nuxt-link class="text-gray-600 hover:text-gray-800" to="#"
-        ><Hamburger
-          class="hover:text-teal-500 transform hover:-rotate-90 transition duration-500 origin-center"
-      /></nuxt-link>
     </div>
   </div>
 </template>
